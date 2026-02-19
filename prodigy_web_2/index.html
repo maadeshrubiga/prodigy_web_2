@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubi Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💎 Rubi Stopwatch</h1>
+        <p class="tagline">Track Every Second. Visualize Every Lap.</p>
+
+        <div class="main-content">
+
+            <!-- Left: Stopwatch Section -->
+            <div class="stopwatch-section">
+
+                <div class="display" id="display">00:00:00.00</div>
+
+                <div class="controls">
+                    <button id="startBtn">Start</button>
+                    <button id="stopBtn" disabled>Stop</button>
+                    <button id="lapBtn" disabled>Lap</button>
+                    <button id="resetBtn">Reset</button>
+                </div>
+
+                <div class="laps-container">
+                    <h3>📋 Lap Times</h3>
+                    <ul class="lap-list" id="lapList"></ul>
+                </div>
+
+            </div>
+
+            <!-- Right: Graph Section -->
+            <div class="graph-section">
+                <h3>📊 Lap Time Comparison Graph</h3>
+                <div class="graph-container" id="graphContainer">
+                    <div class="no-data">
+                        <div class="no-data-icon">📊</div>
+                        <div>Press Start and record laps to see the graph</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
